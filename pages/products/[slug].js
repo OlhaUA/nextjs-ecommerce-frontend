@@ -15,7 +15,7 @@ const Product = ({ product }) => {
       </Head>
 
       <h3>{product.name}</h3>
-      <Image src={fromImageToUrl(product.image)} />
+      <Image src={product.image.formats.large.url} />
       <h3>{product.name}</h3>
       <p>
         ${twoDecimals(product.price)} <BuyButton product={product} />

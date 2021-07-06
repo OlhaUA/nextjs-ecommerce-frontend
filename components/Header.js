@@ -39,7 +39,7 @@ const Header = () => {
         {user ? (
           <Link href='/account'>
             <a>
-              <Image src='/user_avatar.png' alt={user.email} />
+              <Image src='../public/user_avatar.png' alt={user.email} />
             </a>
           </Link>
         ) : (
