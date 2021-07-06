@@ -21,7 +21,7 @@ export default function Home({ products }) {
               <div className={styles.product__Row}>
                 <div className={styles.product__ColImg}>
                   <Image
-                    src={product.image.formats.large.url}
+                    src={product.image.formats.medium.url}
                     width={600}
                     height={900}
                   />
