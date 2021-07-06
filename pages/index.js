@@ -21,9 +21,9 @@ export default function Home({ products }) {
               <div className={styles.product__Row}>
                 <div className={styles.product__ColImg}>
                   <Image
-                    src='https://res.cloudinary.com/dbgta4wnd/image/upload/v1625556469/small_dress_3_2f75e2969d.jpg'
-                    width={333}
-                    height={500}
+                    src={product.image.formats.small.url}
+                    width={200}
+                    height={300}
                   />
                 </div>
                 <div className={styles.product__Col}>
