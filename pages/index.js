@@ -21,7 +21,7 @@ export default function Home({ products }) {
               <div className={styles.product__Row}>
                 <div className={styles.product__ColImg}>
                   <Image
-                    src={fromImageToUrl(product.image)}
+                    src='https://res.cloudinary.com/dbgta4wnd/image/upload/v1625556469/small_dress_3_2f75e2969d.jpg'
                     width={200}
                     height={200}
                   />
