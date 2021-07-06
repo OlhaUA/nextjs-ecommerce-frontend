@@ -20,7 +20,11 @@ export default function Home({ products }) {
             <a>
               <div className={styles.product__Row}>
                 <div className={styles.product__ColImg}>
-                  <Image src={fromImageToUrl(product.image)} />
+                  <Image
+                    src={fromImageToUrl(product.image)}
+                    width={200}
+                    height={200}
+                  />
                 </div>
                 <div className={styles.product__Col}>
                   {product.name} ${twoDecimals(product.price)}
