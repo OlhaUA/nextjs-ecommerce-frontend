@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 
 import AuthContext from '../context/AuthContext';
@@ -38,7 +39,7 @@ const Header = () => {
         {user ? (
           <Link href='/account'>
             <a>
-              <img src='/user_avatar.png' alt={user.email} />
+              <Image src='/user_avatar.png' alt={user.email} />
             </a>
           </Link>
         ) : (

@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 
 import { fromImageToUrl, API_URL } from '../utils/urls';
@@ -19,7 +20,7 @@ export default function Home({ products }) {
             <a>
               <div className={styles.product__Row}>
                 <div className={styles.product__ColImg}>
-                  <img src={fromImageToUrl(product.image)} />
+                  <Image src={fromImageToUrl(product.image)} />
                 </div>
                 <div className={styles.product__Col}>
                   {product.name} ${twoDecimals(product.price)}

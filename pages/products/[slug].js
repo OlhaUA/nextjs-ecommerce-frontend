@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import { fromImageToUrl, API_URL } from '../../utils/urls';
 import { twoDecimals } from '../../utils/format';
 import BuyButton from '../../components/BuyButton';
@@ -14,7 +15,7 @@ const Product = ({ product }) => {
       </Head>
 
       <h3>{product.name}</h3>
-      <img src={fromImageToUrl(product.image)} />
+      <Image src={fromImageToUrl(product.image)} />
       <h3>{product.name}</h3>
       <p>
         ${twoDecimals(product.price)} <BuyButton product={product} />
